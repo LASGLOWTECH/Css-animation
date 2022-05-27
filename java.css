@@ -1,0 +1,173 @@
+
+body{margin:0;
+padding: 0;
+box-sizing: border-box;}
+
+/* Header section*/
+.container{ width: 100%;
+height:200px;
+padding: 5px;
+
+background-color: red;}
+/* Logo */
+.brand{
+    left:-30px;
+    top: 15px;
+    padding: 5px 60px;
+    width: 170px;
+    height:170px;
+    position: absolute;
+    align-self: center;
+    animation-name: turn;
+   animation-duration: 7s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-out;}
+
+    
+
+@keyframes turn{
+    from{transform:rotatey(360deg)};}
+to{transform: translateX(400px)};}
+
+
+    .brand{
+        left: 20px;
+    }
+
+
+.sky, .field , road{
+ 
+     position: relative;
+}
+.sky{
+    background-color:skyblue;
+    background-image: -webkit-gradient(radial, left top, left bottom, from(indigo), to(skyblue));
+  bottom: 2px;
+    height: 250px;
+    padding: 1px;
+
+}
+
+
+
+.field{
+    background-color:seagreen;
+    height: 100px;
+padding-top: 1px;
+}
+
+h1{Color:White;
+   top:20px;
+Font-size:30px;
+text-align: center;
+position: relative;}
+
+
+.container h1{
+    float: right;
+    margin-right: 50px ;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+/*green field styling*/
+.road{
+background-color:rgba(0, 0, 0,0.7);
+height: 500px;
+border-top: 5px solid white;
+border-bottom: 5px solid white;
+padding-bottom: 3px;
+}
+/* broken lines styling */
+
+.lines{top:250px;
+  position: relative;;
+height:5;
+border: 5px dashed white;
+top:150px;
+
+}
+
+
+   
+
+
+
+
+
+  /* Redcar aniamtion*/
+.Bot{
+    /* the element to aniamte*/
+  
+    top:500px;
+  Padding-left:-80px;
+position:absolute;
+animation-name: ride;
+animation-duration: 3s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+animation-timing-function:ease-in;
+animation-timing-function: linear;
+}
+
+/* Animation name */
+@keyframes ride{
+    from{transform:translateX(-1200px) }
+    to{transform: translateX(1500px)};
+ }
+    
+ /*black car animation*/
+ .Bcar{
+    
+   top:700px;
+  padding-right:-80px;
+position:absolute;
+animation-name: ride2;
+animation-duration: 6s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+animation-timing-function:ease-in
+}
+
+@keyframes ride2{
+    from{transform:translateX(1500PX)}
+    to{transform: translateX(-1500px)}; }
+
+/*Orange car animation*/
+    .Ocar{
+top: 500px;
+      
+      padding-right:-80px;
+    position:absolute;
+    animation-name: ride3;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-out;
+    }
+    
+    @keyframes ride3{
+        from{transform:translateX(1000px)}
+        to{transform: translateX(-1200px)};
+    
+        }
+
+      /*sport  car(skvybluee) animation*/
+        .Scar{
+            
+              top: 800px;
+              padding-right:-80px;
+            position:absolute;
+            animation-name: ride4;
+            animation-duration: 4s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+            }
+            /* Animation name */
+            @keyframes ride4{
+                from{transform:translateX(1500px)}
+                to{transform: translateX(-1200px)};
+            
+                }
+    
+
